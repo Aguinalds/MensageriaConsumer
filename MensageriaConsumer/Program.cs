@@ -30,6 +30,7 @@ namespace MensageriaConsumer
                 byte[] body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
                 Console.WriteLine($" [x] {message}");
+                //ATIVA A API B QUE É DE PAGAMENTOS QUE ELE LÊ A REMESSA E MANDA PARA O BANCO POSTGRESS QUANDO RECEBE UMA MENSAGEM
                 using (var httpClient = new HttpClient())
                 {
                     var endpointUrl = "https://localhost:7273/api/Boletos/LerRemessa"; // URL do endpoint da API principal
