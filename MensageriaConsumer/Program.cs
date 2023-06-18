@@ -9,7 +9,7 @@ namespace MensageriaConsumer
 {
     internal class Program
     {
-        private static readonly string QueueName = "EnviarRemessa";
+        private static readonly string QueueName = "EnviarMensagem";
 
         static void Main()
         {
